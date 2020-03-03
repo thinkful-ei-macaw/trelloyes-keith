@@ -1,21 +1,20 @@
 import React from 'react';
-import store from './store';
+import './Card.css';
 
 
 function Card(props) {
     console.log(props.content)
 return (
 <div className="Card">
-<h3>
-{props.title}
-</h3>
-<br></br>
-{props.content}
-
-</div>
-
-)
-
+<button
+        type='button'
+      >
+        delete
+      </button>
+      <h3>{props.title}</h3>
+      <p>{props.content}</p>
+    </div>
+  )
 }
 
 export default Card;
